@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+body, html{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0:
+  top:0;
+  padding-top:5px;
+}
+#center{
+  top: 300px;
+  color: green;
+}
+#navbar{
+  height: auto;
+  overflow: auto;
+  background-color: #0E0B16;
+}
+#navbarlogo{
+ color: #33CCFF;
+ font-size: 40px;
+
+}
+#navbarmeniu{
+ color: #E7DFDD;
+}
+#button{
+  position: center;
+}
+.Order{
+   background-image: url(../images/Large-Banner.jpg);
+   height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   display: table;
+   top:0;
+   width: 100%;
+   background-size: cover;
+}
+}
+.Order .Orderbutton{
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+
+}
+.button{
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  position:  center;
+  margin-top:  550px;
+}
+.btn{
+  border-radius: 9px;
+  font-family: 'Oswald',sans-serif;
+  color: #F9F3F4;
+  font-size: 135%;
+  padding: 10px 20px;
+  border: solid #F9F3F4 3px;
+  background-color: Transparent;
+}
+.btn:hover{
+  color:	#0186C0;
+  border: solid 	#0186C0 3px;
+}
+img.details{
+  width:auto;
+  margin: 15px auto;
+  height: 300px;
+}
+#resultable{
+  border-style: solid;
+  text-align: center;
+  background-color: white;
+  margin-top: 100px;
+  border-color: black;
+  width: auto;
+}
+#Name-label{
+  margin-left: -15px;
+}
+#Name{
+  width: 100px;
+  margin-left: -15px;
+}
+#Number-label{
+  margin-left: -15px;
+}
+#Number{
+  width: 100px;
+  margin-left: -15px;
+}
+.bottom{
+  height: auto;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  width: 100%;
+ background-color: black;
+ color: white;
+ text-align: center;
+}
