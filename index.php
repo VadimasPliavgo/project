@@ -99,6 +99,7 @@ $(document).ready(function(){
     $('#orderModel').modal('hide');
     $('#ordersucc').modal('show');
 });
+  });
 </script>
 
 <script>
