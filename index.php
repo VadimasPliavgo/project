@@ -63,7 +63,7 @@
                       <option value="Orchid Gray">Orchid Grey</option>
                       <option value="Midnight Black">Midnight Black</option>
                       <option value="Arctic Silver">Arctic Silver</option>
-                      <<option value="Coral Blue">Coral Blue</option>
+                      <option value="Coral Blue">Coral Blue</option>
                     </select>
                   </tr>
                   <tr><b>Full name:</b></tr>
@@ -94,7 +94,8 @@
 <!--end of popup-->
 
 <script>
-$.on('submit',function(){
+$(document).ready(function(){
+    $("orderModal").on('submit',function(){
     $('#orderModel').modal('hide');
     $('#ordersucc').modal('show');
 });
