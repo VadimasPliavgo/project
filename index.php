@@ -55,7 +55,7 @@
               </tr>
               <br />
             <!--order form-->
-              <form action="ordertosql.php" id="firstform" method="POST" class="ajax">
+              <form action="ordertosql.php" onclic="openclose" id="firstform" method="POST" class="ajax">
                   <tr><b>Select color:</b></tr>
                   <tr>
                     <select required  name="color" id="color" class="form-control" style="width:200px">
@@ -94,12 +94,10 @@
 <!--end of popup-->
 
 <script>
-$(document).ready(function(){
-    $("orderModal").on('submit',function(){
-    $('#orderModel').modal('hide');
-    $('#ordersucc').modal('show');
-});
-  });
+function openclose(){
+  $('#orderModel').modal('hide');
+  $('#ordersucc').modal('show');
+}
 </script>
 
 <script>
