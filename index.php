@@ -94,7 +94,7 @@
 <!--end of popup-->
 
 <script>
-('form.ajax').on('submit',function(){
+$.on('submit',function(){
     $('#orderModel').modal('hide');
     $('#ordersucc').modal('show');
 });
