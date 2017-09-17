@@ -18,15 +18,14 @@
 </style>
 </head>
 <body style="background-color:#1284B7;">
-  <nav class="navbar navbar-default  navbar-fixed-top" id="navbar">
-    <div class="container">
-      <a href="index.php" class="navbar-brand" ><b><font size="5" color="#377BB5">PhoneShop</font></b></a>
-      <ul class="nav navbar-nav">
-          <li><a href="index.php" id="navbarmeniu">Home</a></li>
-          <li><a href="orders.php" id="navbarmeniu">View Orders</a></li>
-       </ul>
-     </div>
-  </nav>
+    <div class="navbar navbar-invert  navbar-fixed-top" id="navbar">
+   <div class="container-fluide">
+     <a href="index.php" class="navbar-brand" style="width=10px;" ><b><font size="5">PhoneShop</font></b></a>
+     <ul class="nav navbar-nav navbar-right">
+         <li><a href="orders.php" id="navbarmeniu"><b>View Orders</b></a></li>
+      </ul>
+    </div>
+ </div>
 </div>
 <table id="resultable" align="center" >
   <?php include 'returndata.php'; ?>
