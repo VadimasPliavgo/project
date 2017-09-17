@@ -55,7 +55,7 @@
               </tr>
               <br />
             <!--order form-->
-              <form action="ordertosql.php" onclic="openclose" id="firstform" method="POST" class="ajax">
+              <form action="ordertosql.php" onsubmit="openclose" id="firstform" method="POST" class="ajax">
                   <tr><b>Select color:</b></tr>
                   <tr>
                     <select required  name="color" id="color" class="form-control" style="width:200px">
