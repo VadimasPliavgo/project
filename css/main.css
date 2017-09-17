@@ -34,6 +34,9 @@ float: right!important;
  color: #33CCFF;
  font-size: 40px;
 }
+td.highlight {
+    background-color: black !important;
+}
 #navbarmeniu{
  color: #E7DFDD;
  margin-left: 5px;
@@ -86,7 +89,9 @@ img.details{
   height: 300px;
 }
 #tableclass{
+      border-radius:2px;
  margin:5% 5% 5% 5%;
+ background-color: #d3d3d3;
 }
 th{
   text-align: center;
