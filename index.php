@@ -5,17 +5,17 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/main.css"  />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 
 </head>
 <body>
   <nav class="navbar navbar-invert  navbar-fixed-top" id="navbar">
    <div class="container">
-     <a href="index.php" class="navbar-brand" ><b><font size="5">PhoneShop</font></b></a>
+     <a href="/puslapis/index.php" class="navbar-brand" ><b><font size="5">PhoneShop</font></b></a>
      <ul class="nav navbar-nav">
          <li><a href="index.php" id="navbarmeniu">Home</a></li>
-         <li><a href="orders.php" id="navbarmeniu">View Orders</a></li>
+         <li><a href="/puslapis/orders.php" id="navbarmeniu">View Orders</a></li>
       </ul>
     </div>
  </nav>
@@ -48,15 +48,15 @@
                 <br />
               </div>
             </div>
+
+
             <table>
               <br /><br />
               <tr>
                 <p><b>Price: 800 &euro;</b></p>
               </tr>
               <br />
-              
-<!--order form-->
-              
+            <!--order form-->
               <form action="ordertosql.php" onsubmit="openclose()" id="firstform" method="POST" class="ajax">
                   <tr><b>Select color:</b></tr>
                   <tr>
@@ -65,16 +65,16 @@
                       <option value="Orchid Gray">Orchid Grey</option>
                       <option value="Midnight Black">Midnight Black</option>
                       <option value="Arctic Silver">Arctic Silver</option>
-                      <option value="Coral Blue">Coral Blue</option>
+                      <<option value="Coral Blue">Coral Blue</option>
                     </select>
                   </tr>
                   <tr><b>Full name:</b></tr>
                     <tr>
-                      <input required  type="text" pattern="[A-Za-z\s]+" class="form-control" id="Name" name="name" placeholder="Name Surname" style="width:200px" >
+                      <input required  type="text" pattern="[A-Za-z\s]+" class="form-control" id="Name" name="name" placeholder="Name Surname" style="width:200px; margin-left:1px;" >
                     </tr>
                     <tr><b>Phone number:</b></tr>
                     <tr>
-                      <input required type="tel" pattern="[\+]\d{11}" class="form-control" id="Number" name="phone" placeholder="+370xxxxxxxx" style="width:200px" >
+                      <input required type="tel" pattern="[\+]\d{11}" class="form-control" id="Number" name="phone" placeholder="+370xxxxxxxx" style="width:200px; margin-left:1px;" >
                     </tr>
                     <tr><b>Email:</b></tr>
                     <tr>
@@ -100,6 +100,7 @@ function openclose(){
   $('#orderModel').modal('hide');
   $('#ordersucc').modal('show');
 }
+
 </script>
 
 <script>
@@ -121,7 +122,7 @@ document.getElementById("firstform").reset();
 </div>
 
 <footer>
-  <div class="bottom">
+  <div class="bottom bottom-fixed-bottom">
     <p>This Page is just introductory assignment to NFQ academy! It's not a real shop! Don't use your personal informacion, it might be stolen!</p>
   </div>
 </footer>
