@@ -54,8 +54,10 @@
                 <p><b>Price: 800 &euro;</b></p>
               </tr>
               <br />
-            <!--order form-->
-              <form action="ordertosql.php" onsubmit="openclose" id="firstform" method="POST" class="ajax">
+              
+<!--order form-->
+              
+              <form action="ordertosql.php" onsubmit="openclose()" id="firstform" method="POST" class="ajax">
                   <tr><b>Select color:</b></tr>
                   <tr>
                     <select required  name="color" id="color" class="form-control" style="width:200px">
