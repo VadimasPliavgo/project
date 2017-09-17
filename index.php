@@ -10,15 +10,15 @@
 
 </head>
 <body>
-  <nav class="navbar navbar-invert  navbar-fixed-top" id="navbar">
-   <div class="container">
-     <a href="index.php" class="navbar-brand" ><b><font size="5">PhoneShop</font></b></a>
-     <ul class="nav navbar-nav">
-         <li><a href="index.php" id="navbarmeniu">Home</a></li>
-         <li><a href="orders.php" id="navbarmeniu">View Orders</a></li>
+  <!--navbar-->
+  <div class="navbar navbar-invert  navbar-fixed-top" id="navbar">
+   <div class="container-fluide">
+     <a href="index.php" class="navbar-brand" style="width=10px;" ><b><font size="5">PhoneShop</font></b></a>
+     <ul class="nav navbar-nav navbar-right">
+         <li><a href="orders.php" id="navbarmeniu"><b>View Orders</b></a></li>
       </ul>
     </div>
- </nav>
+ </div>
 <section class="Order">
   <div class="Orderbutton">
     <div class="button">
@@ -65,7 +65,7 @@
                       <option value="Orchid Gray">Orchid Grey</option>
                       <option value="Midnight Black">Midnight Black</option>
                       <option value="Arctic Silver">Arctic Silver</option>
-                      <<option value="Coral Blue">Coral Blue</option>
+                      <option value="Coral Blue">Coral Blue</option>
                     </select>
                   </tr>
                   <tr><b>Full name:</b></tr>
