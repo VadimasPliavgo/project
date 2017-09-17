@@ -12,10 +12,10 @@
 <body>
   <nav class="navbar navbar-invert  navbar-fixed-top" id="navbar">
    <div class="container">
-     <a href="/puslapis/index.php" class="navbar-brand" ><b><font size="5">PhoneShop</font></b></a>
+     <a href="index.php" class="navbar-brand" ><b><font size="5">PhoneShop</font></b></a>
      <ul class="nav navbar-nav">
          <li><a href="index.php" id="navbarmeniu">Home</a></li>
-         <li><a href="/puslapis/orders.php" id="navbarmeniu">View Orders</a></li>
+         <li><a href="orders.php" id="navbarmeniu">View Orders</a></li>
       </ul>
     </div>
  </nav>
