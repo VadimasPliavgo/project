@@ -15,14 +15,24 @@ body, html{
   height: auto;
   overflow: auto;
   background-color: #0E0B16;
+  position:absolute;
 }
 #navbarlogo{
  color: #33CCFF;
  font-size: 40px;
-
+}
+#myInput{
+  border-style: solid;
+  text-align: center;
+  background-color: white;
+  margin-top: 100px;
+  border-color: black;
+  width: auto;
 }
 #navbarmeniu{
  color: #E7DFDD;
+ display:table;
+ white-space: nowrap;
 }
 #button{
   position: center;
@@ -50,7 +60,7 @@ body, html{
   margin: 0 auto;
   text-align: center;
   position:  center;
-  margin-top:  550px;
+  margin-top:  35%;
 }
 .btn{
   border-radius: 9px;
@@ -93,12 +103,10 @@ img.details{
   margin-left: -15px;
 }
 .bottom{
-  height: auto;
-  position: absolute;
-  right: 0;
+  position: bottom fixed;
   bottom: 0;
   left: 0;
-  padding: 1rem;
+  height: auto;
   width: 100%;
  background-color: black;
  color: white;
