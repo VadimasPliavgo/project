@@ -2,7 +2,7 @@
 include 'connectionDB.php';
 $color = $_POST['color'];
 $name = $_POST['name'];
-$phone = $_POST['phone'];
+$phone = $_POST['number'];
 $email = $_POST['email'];
 $sql = "INSERT INTO orders (color, name, phone, email)
 VALUES ('$color','$name','$phone','$email')";
