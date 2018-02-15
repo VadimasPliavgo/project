@@ -18,5 +18,4 @@ if ($result->num_rows > 0) {
 } else {
     echo "<tr>No orders was found</tr>";
 }
-
  ?>
