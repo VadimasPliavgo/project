@@ -11,7 +11,7 @@ if ($result->num_rows > 0) {
         echo"<td>".$row["id"]."</td>";
         echo"<td>".$row["name"]."</td>";
         echo"<td>".$row["color"]."</td>";
-        echo"<td>".$row["phone"]."</td>";
+        echo"<td>".$row["number"]."</td>";
         echo"<td>".$row["email"]."</td>";
         echo"</tr>";
     }
