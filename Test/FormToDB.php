@@ -10,7 +10,7 @@ if (!$db2) {
 $description = $_POST['description'];
 $sql = "INSERT INTO Contact (name, description)
 VALUES ('$name','$description')";*/
-$sql = "SELECT * FROM Contact";
+$sql = "SELECT * FROM Opportunity";
 $result = mysqli_query($db2, $sql);
 
 echo $result;
