@@ -10,7 +10,10 @@ if (!$db2) {
 $description = $_POST['description'];
 $sql = "INSERT INTO Contact (name, description)
 VALUES ('$name','$description')";*/
-$sql = "SELECT * FROM Opportunity";
+$sql = "SELECT table_name
+  FROM information_schema.tables
+ WHERE table_schema='public'
+   AND table_type='BASE TABLE';";
 $result = mysqli_query($db2, $sql);
 
 echo $result;
