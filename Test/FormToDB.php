@@ -14,7 +14,7 @@ $sql = "INSERT INTO Contact (name, description)
 VALUES ('$name','$description')";
 $result = mysqli_query($db2, $sql);
 
-
+echo $result;
 echo $name;
 echo $description;
 
