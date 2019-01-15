@@ -8,5 +8,16 @@ if (!$db2) {
 else
   echo "OK";
 
+$name = $_POST['name'];
+$description = $_POST['description'];
+$sql = "INSERT INTO Contact (name, description)
+VALUES ('$name','$description')";
+$result = mysqli_query($db, $sql);
+if (!$result)
+  echo"Pizdec";
+  die();
+}
+else
+  echo "OK";
 
  ?>
