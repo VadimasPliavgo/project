@@ -10,8 +10,13 @@ $con = pg_connect("host=$host dbname=$db user=$user password=$pass")
     or die ("Could not connect to server\n"); 
 
 $query = "SELECT * FROM salesforce.contact"; 
-echo $query;
-
+$rs = pg_query($con, $query) or die("Cannot execute query: $query\n");
+echo $rs;
+while ($row = pg_fetch_row($rs)) {
+  echo "$row[0]'\n' $row[1]'\n' $row[2]'\n'";
+}
+    
+pg_close($con); 
 
 
 ?>
