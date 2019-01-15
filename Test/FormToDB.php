@@ -10,6 +10,15 @@ else
 
 $name = $_POST['name'];
 $description = $_POST['description'];
+$sql = "INSERT INTO Contact (name, description)
+VALUES ('$name','$description')";
+$result = mysqli_query($db2, $sql);
+if (!$result)
+  echo"Pizdec";
+  die();
+}
+else
+  echo "OK";
 
 echo $name;
 echo $description;
