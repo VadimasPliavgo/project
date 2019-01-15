@@ -1,20 +1,22 @@
-<?php
-$db2 = parse_url(getenv("postgres://oqqsodykxuvwqp:c4fe4e1d154b3a07d4592a36e0dc6afa99d0fefb1f133f1ed8b98717394ab3d6@ec2-54-247-82-210.eu-west-1.compute.amazonaws.com:5432/d1gk77g1dd4vi9"));
-$db2["path"] = ltrim($db2["path"], "/");
-if (!$db2) {
-  die();
+
+<?php 
+
+$host = "ec2-54-247-82-210.eu-west-1.compute.amazonaws.com"; 
+$user = "oqqsodykxuvwqp"; 
+$pass = "c4fe4e1d154b3a07d4592a36e0dc6afa99d0fefb1f133f1ed8b98717394ab3d6*"; 
+$db = "d1gk77g1dd4vi9"; 
+
+$con = pg_connect("host=$host dbname=$db user=$user password=$pass")
+    or die ("Could not connect to server\n"); 
+
+$query = "SELECT * FROM contact LIMIT 5"; 
+
+$rs = pg_query($con, $query) or die("Cannot execute query: $query\n");
+
+while ($row = pg_fetch_row($rs)) {
+  echo "$row[0] $row[1] $row[2]\n";
 }
 
+pg_close($con); 
 
-/*$name = $_POST['name'];
-$description = $_POST['description'];
-$sql = "INSERT INTO Contact (name, description)
-VALUES ('$name','$description')";*/
-$sql = "SELECT table_name
-  FROM information_schema.tables
- WHERE table_schema='public'
-   AND table_type='BASE TABLE';";
-$result = mysqli_query($db2, $sql);
-
-echo $result;
- ?>
+?>
