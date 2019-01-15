@@ -6,10 +6,11 @@ if (!$db2) {
 }
 
 
-$name = $_POST['name'];
+/*$name = $_POST['name'];
 $description = $_POST['description'];
 $sql = "INSERT INTO Contact (name, description)
-VALUES ('$name','$description')";
+VALUES ('$name','$description')";*/
+$sql = "SELECT * FROM Contact";
 $result = mysqli_query($db2, $sql);
 
 echo $result;
