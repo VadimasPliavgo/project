@@ -7,6 +7,13 @@ if (!$db2) {
 }
 else
   echo "OK";
+
+$name = $_POST['name'];
+
+$description = $_POST['description'];
+$sql = "INSERT INTO Contact (name, description)
+VALUES ('$name','$description')";
+$result = mysqli_query($db, $sql);
  ?>
 
 
@@ -14,7 +21,7 @@ else
   
 <form action="Form.php" method="post">
 Name: <input type="text" name="name"><br>
-E-mail: <input type="text" name="email"><br>
+Description: <input type="text" name="description"><br>
 <input type="submit">
 </form>
 
