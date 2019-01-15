@@ -9,7 +9,7 @@ $db = "d1gk77g1dd4vi9";
 $con = pg_connect("host=$host dbname=$db user=$user password=$pass")
     or die ("Could not connect to server\n"); 
 
-$query = "SELECT * FROM pg_catalog.pg_tables;"; 
+$query = "SELECT * FROM pg_catalog.contact;"; 
 
 $rs = pg_query($con, $query) or die("Cannot execute query: $query\n");
 
