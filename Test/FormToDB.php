@@ -13,10 +13,8 @@ $query = "select * from information_schema.tables";
 
 $rs = pg_query($con, $query) or die("Cannot execute query: $query\n");
 
-
-  echo $rs;
-
-
+echo $rs;
+    
 pg_close($con); 
 
 ?>
