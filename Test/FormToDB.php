@@ -9,7 +9,7 @@ $db = "d1gk77g1dd4vi9";
 $con = pg_connect("host=$host dbname=$db user=$user password=$pass")
     or die ("Could not connect to server\n"); 
 
-$empty = '';
+$empty = null;
 $name = $_POST['name'];
 $description = $_POST['description'];
 $sql = "INSERT INTO salesforce.contact(
