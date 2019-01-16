@@ -11,10 +11,9 @@ $con = pg_connect("host=$host dbname=$db user=$user password=$pass")
 
 $empty = null;
 $name = $_POST['name'];
-$description = $_POST['description'];
-$sql = "INSERT INTO salesforce.contact(
-	createddate, isdeleted, name, systemmodstamp, lastname, accountid, sfid, id, _hc_lastop, _hc_err, description)
-	VALUES ($empty, $empty, $name, $empty, $empty, $empty, $empty $empty, $empty, $empty, $description)";
+$id = $_POST['id'];
+$sql = "INSERT INTO salesforce.test_object__c(name,  id__c)
+	VALUES ($name, $ID)";
 
 $rs = pg_query($con, $sql) or die("Cannot execute query: $sql\n");
 
