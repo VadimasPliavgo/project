@@ -9,14 +9,15 @@ $db = "d1gk77g1dd4vi9";
 $con = pg_connect("host=$host dbname=$db user=$user password=$pass")
     or die ("Could not connect to server\n"); 
 
-$query = "SELECT * FROM salesforce.contact"; 
-$rs = pg_query($con, $query) or die("Cannot execute query: $query\n");
-echo $rs;
-$i = 0;
-while ($row = pg_fetch_row($rs)) {
-  echo "$row[$i++] <br>";
-}
-    
+$empty = '';
+$name = $_POST['name'];
+$description = $_POST['description'];
+$sql = "INSERT INTO salesforce.contact(
+	createddate, isdeleted, name, systemmodstamp, lastname, accountid, sfid, id, _hc_lastop, _hc_err, description)
+	VALUES ($empty, $empty, $name, $empty, $empty, $empty, $empty $empty, $empty, $empty, $description)";
+
+$rs = pg_query($con, $sql) or die("Cannot execute query: $query\n");
+
 pg_close($con); 
 
 
