@@ -13,7 +13,7 @@ $empty = null;
 $name = $_POST['name'];
 $id = $_POST['id'];
 $sql = "INSERT INTO salesforce.test_object__c(name,  id__c)
-	VALUES ($name, $ID)";
+	VALUES ($name, $id)";
 
 $rs = pg_query($con, $sql) or die("Cannot execute query: $sql\n");
 
